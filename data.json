@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Zeev",
+    "email": "z@from-netanya.co.il",
+    "role": "dev",
+    "id": 1
+  },
+  {
+    "name": "Ariel",
+    "email": "c",
+    "role": "dev",
+    "id": 2
+  },
+  {
+    "name": "Chai",
+    "email": "c@from-netanya.co.il",
+    "role": "dev",
+    "id": 3
+  },
+  {
+    "name": "Jordan",
+    "role": "dev",
+    "email": "jordan@webschool.co.il",
+    "id": 4
+  }
+]
