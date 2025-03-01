@@ -1,0 +1,25 @@
+-- Utiliser la base de données existante
+USE webschool;
+
+-- Création de la table des articles
+CREATE TABLE IF NOT EXISTS articles (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titre VARCHAR(255) NOT NULL,
+    contenu TEXT NOT NULL,
+    date_publication DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Insertion des articles
+INSERT INTO articles (titre, contenu) VALUES 
+(
+    'Les tendances technologiques en 2025',
+    'L\'intelligence artificielle, la blockchain et l\'informatique quantique transforment notre façon de vivre et de travailler...'
+),
+(
+    'Comment créer un blog avec React et Node.js',
+    'Dans ce tutoriel, nous allons voir comment mettre en place un blog en utilisant React pour le frontend et Node.js pour le backend...'
+),
+(
+    'Les meilleures pratiques en programmation moderne',
+    'Écrire un code propre, tester régulièrement et documenter ses projets sont des pratiques essentielles pour tout développeur...'
+);
