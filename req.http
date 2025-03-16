@@ -4,7 +4,7 @@ GET http://localhost:8000 HTTP/1.1
 
 ###
 
-GET http://localhost:8000/usersByMySql HTTP/1.1
+GET http://localhost:8000/usersMySql HTTP/1.1
 
 ###
 
@@ -17,5 +17,9 @@ GET http://localhost:8000/articles HTTP/1.1
 ###
 
 GET http://localhost:8000/articles/2 HTTP/1.1
+
+###
+
+DELETE http://localhost:8000/users/2 HTTP/1.1
 
 ###
