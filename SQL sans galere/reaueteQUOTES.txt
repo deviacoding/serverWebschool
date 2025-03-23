@@ -1,0 +1,12 @@
+USE webschool;
+
+CREATE TABLE quotes (
+    id INT AUTO_INCREMENT PRIMARY KEY, -- Identifiant unique pour chaque devis
+    name VARCHAR(255) NOT NULL,        -- Nom de l'utilisateur
+    email VARCHAR(255) NOT NULL,       -- Email de l'utilisateur
+    phone VARCHAR(20) NOT NULL,        -- Téléphone de l'utilisateur
+    service VARCHAR(50) NOT NULL,      -- Service sélectionné (paquebot, container, etc.)
+    status ENUM('new', 'a rappeler', 'nrp', 'signe') DEFAULT 'new', -- Statut du devis
+    commentaire TEXT DEFAULT NULL,     -- Commentaire pour gérer les devis
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Date et heure de création du devis
+);
