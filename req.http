@@ -1,25 +1,50 @@
 ### 
 
-GET http://localhost:8000 HTTP/1.1
+GET http://localhost:8001 HTTP/1.1
 
 ###
 
-GET http://localhost:8000/usersMySql HTTP/1.1
+GET http://localhost:8001/secret HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiZW1haWwiOiJ0ZXN0NUB0ZXN0LmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzQ0OTgxNjI0LCJleHAiOjE3NDUwNjgwMjR9.Smx79lbd2GPGLpCt4Pzgp3YCJRxAaFPEIy3ffF2jppM
 
 ###
 
-GET http://localhost:8000/contact/elie HTTP/1.1
+GET http://localhost:8001/usersMySql HTTP/1.1
 
 ###
 
-GET http://localhost:8000/articles HTTP/1.1
+POST http://localhost:8001/signup HTTP/1.1
+content-type: application/json
+
+{
+    "email": "test5@test.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:8001/signin HTTP/1.1
+content-type: application/json
+
+{
+    "email": "test5@test.com",
+    "password": "123456"
+}
 
 ###
 
-GET http://localhost:8000/articles/2 HTTP/1.1
+GET http://localhost:8001/contact/elie HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiZW1haWwiOiJ0ZXN0NUB0ZXN0LmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzQ1MTYzODI2LCJleHAiOjE3NDUyNTAyMjZ9.9MkdVyvihne0F-KHi4zOhrs6EBLA0pYaQKAj6Q-DUsc
 
 ###
 
-DELETE http://localhost:8000/users/2 HTTP/1.1
+GET http://localhost:8001/articles HTTP/1.1
+
+###
+
+GET http://localhost:8001/articles/2 HTTP/1.1
+
+###
+
+DELETE http://localhost:8001/users/2 HTTP/1.1
 
 ###

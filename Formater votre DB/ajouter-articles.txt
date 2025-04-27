@@ -1,6 +1,9 @@
--- Utiliser la base de données existante
-USE webschool;
-
+--
+-- Pour inserer cette table dans votre phpMyAdmin
+-- Cliquez sur la base de donne webschool
+-- Allez dans la rubrique SQL
+-- Collez simplement tout ce qu'il y'a ci dessous
+--
 
 CREATE TABLE `articles` (
   `id` int(11) NOT NULL,
